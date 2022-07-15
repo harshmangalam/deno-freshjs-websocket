@@ -2,19 +2,19 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_middleware.ts";
+import * as $0 from "./routes/api/socketio.ts";
 import * as $1 from "./routes/chat.tsx";
 import * as $2 from "./routes/index.tsx";
-import * as $$0 from "./islands/WebsocketProvider.tsx";
+import * as $$0 from "./islands/ChatProvider.tsx";
 
 const manifest = {
   routes: {
-    "./routes/_middleware.ts": $0,
+    "./routes/api/socketio.ts": $0,
     "./routes/chat.tsx": $1,
     "./routes/index.tsx": $2,
   },
   islands: {
-    "./islands/WebsocketProvider.tsx": $$0,
+    "./islands/ChatProvider.tsx": $$0,
   },
   baseUrl: import.meta.url,
 };
